@@ -30,6 +30,10 @@ h2 {
   font-size: 1.8rem;
 }
 
+p {
+  font-size: 14px;
+}
+
 .white-button {
   background-color: #ffffff;
   border-radius: 15px;
@@ -260,7 +264,7 @@ form.inscription-form {
 
 .newsletter {
   color: #fff;
-  padding: 10rem 10rem 20rem 10rem;
+  padding: 5rem 10rem 5rem 10rem;
   display: flex;
   flex-direction: column;
   background-image: url("../images/img6.png");
@@ -288,7 +292,7 @@ form.inscription-form {
 form.newsletter-form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 
 .newsletter-form input.newsletter-input {
@@ -313,6 +317,7 @@ form.newsletter-form {
 .checkbox input {
   transform: scale(2);
   border: 1px solid #000;
+  margin-right: 12px;
 }
 
 .checkbox a {
@@ -320,14 +325,14 @@ form.newsletter-form {
 }
 
 .newsletter-form button {
-  width: 60%;
+  width: 80%;
   text-align: center;
 }
 
 /********* FOOTER Section *********/
 
 footer {
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
   background-color: #000;
   color: #fff;
 }
