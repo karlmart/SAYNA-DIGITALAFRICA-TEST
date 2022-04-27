@@ -1,0 +1,462 @@
+/**** GENERAL Styles ****/
+@font-face {
+  font-family: "Far From Homecoming";
+  src: url("../fonts/Far-From-Homecoming-Updated.otf") format("opentype");
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main {
+  background-color: #B11313;
+}
+
+p, ul, h1, h2, a {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+h1, h2 {
+  font-family: 'Far From Homecoming', serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.white-button {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #b11313;
+  font-weight: 600;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.white-button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.outline-button {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.outline-button:hover {
+  background-color: #ffffff;
+  color: #b11313;
+}
+
+
+/******* Header *******/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background-color: #B11313;
+  padding: 1rem 0;
+}
+
+
+.logo {
+  width: 20rem;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar {
+  width: 30rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+/****** TITLE Section ********/
+
+.page-title {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.page-title .container {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+}
+
+.page-title h1 {
+  margin-bottom: 7rem;
+  font-size: 6rem;
+}
+
+.page-title h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: inherit;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+
+
+/****** ACTORS Section ********/
+
+.actors {
+  color: #fff;
+  padding: 0 10rem 10rem 10rem;
+  margin-top: -4rem;
+}
+
+.actors h2 {
+  margin-bottom: 1rem;
+}
+
+.actors p.intro {
+  width: 60%;
+}
+
+.actors .cards-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.actors .cards-container .card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card-description {
+  margin-bottom: 2rem;
+}
+
+.card-description p {
+  text-align: justify;
+}
+
+.card-description ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.card a.white-button {
+  font-size: 14px;
+  padding: 15px;
+}
+
+/********* INSCRIPTION SECTION *********/
+
+.inscription {
+  color: #fff;
+  padding: 0 10rem;
+  height: 60vh;
+  background-color: #114C92;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../images/img5.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.inscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inscription-container h2 {
+  margin-bottom: 2rem;
+}
+
+.inscription-container p {
+  margin-bottom: 1rem;
+}
+
+form.inscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.inscription-form input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.inscription-form input::placeholder {
+  color: #000;
+}
+
+.inscription-form button {
+  margin-top: 20px;
+  width: 60%;
+}
+
+
+/********* NEWSLETTER Section *******/
+
+.newsletter {
+  color: #fff;
+  padding: 10rem 10rem 20rem 10rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/img6.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.newsletter-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.newsletter-container h2 {
+  margin-bottom: 2rem;
+}
+
+.newsletter-container p {
+  margin-bottom: 3.5rem;
+}
+
+form.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.newsletter-form input.newsletter-input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 80%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.newsletter-form input.newsletter-input::placeholder {
+  color: #fff;
+}
+
+.checkbox {
+  margin: 1.5rem 0 3.5rem 2rem;
+  text-indent: -2rem;
+}
+
+.checkbox input {
+  transform: scale(2);
+  border: 1px solid #000;
+}
+
+.checkbox a {
+  color: #fff;
+}
+
+.newsletter-form button {
+  width: 60%;
+  text-align: center;
+}
+
+/********* FOOTER Section *********/
+
+footer {
+  padding: 5rem 10rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-navbar .nav-list li a {
+  margin: 0 1rem;
+}
+
+.lang {
+  padding: 10px;
+  background-color: #B11313;
+  width: 10rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+}
+
+section.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 7rem auto 2rem auto;
+}
+
+.social-logo-container {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+img.social-logo {
+  width: 100%;
+}
+
+p.copyright {
+  text-align: center;
+}
+
+/************** RESPONSIVE **************/
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  .page-title {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .actors {
+    color: #fff;
+    padding: 10rem 5rem 3rem 5rem;
+    text-align: center;
+  }
+
+  .actors p.intro {
+    width: 100%;
+  }
+
+  .actors .cards-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .actors .cards-container .card {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inscription, .newsletter {
+    padding: 10rem;
+  }
+
+  .inscription-container h2 {
+    text-align: center;
+  }
+
+  form.inscription-form {
+    width: 100%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5rem 5rem 0 5rem;
+    width: 100%;
+  }
+
+  .newsletter-form button.white-button {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .footer-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-navbar .logo {
+    margin: 2rem;
+  }
+
+  section.socials {
+    width: 100%;
+  }
+}
